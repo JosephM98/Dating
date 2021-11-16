@@ -1,0 +1,17 @@
+from datetime import datetime
+from datetime import date
+
+print("We are starting at: ")
+currently = datetime.now()
+print(currently)
+currently = date.today()
+print(currently)
+"""
+try:
+  bday = input("Give your birthday.")
+  date_object = datetime.strptime(bday, "%B %d, %Y") 
+  print("Day of week: " + date_object.strftime("%A"))
+  difference = now - date_object
+  print("That was this many days ago: ", difference.seconds)
+  dday = input("Give your deathday: ")
+  
